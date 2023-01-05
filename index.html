@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Video Player</title>
+</head>
+<body>
+    <!-- ! Container -->
+    <div class="wrapper">
+        <div class="player">
+            <video id="video" src="assets/videos/playa.mp4" poster="../video-player/assets/images/poster-playa.jpg" muted width="500px" height="500px"></video>
+            <!-- ! -->
+            <div class="player-overlay">
+            <!-- ! Title -->
+            <h2 class="player-title">Beach</h2>
+                <div class="player-actions">
+                    <button class="button" id="backward" aria-label="Retrocede 10 segundos" title="Retrocede 10 segundos"></button>
+                    <button class="button" id="play" aria-label="Reproduce video" title="Reproducir"></button>
+                    <button class="button" id="pause" hidden aria-label="Pausa video" title="Pausar"></button>
+                    <button class="button" id="forward" aria-label="Adelanta video 10 segundos" title="Adelanta 10 segundos"></button>
+                </div>
+                <div class="player-progress">
+                    <input id="progress" type="range" min="0" max="100" value="0" step=".1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! JS -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

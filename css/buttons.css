@@ -1,0 +1,32 @@
+.button{
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    inline-size: 26.7px;
+    block-size: 26.7px;
+}
+
+.button:active{
+    transform: scale(.9);
+}
+
+#play{
+    background-image: url(../assets/images/play.svg);
+}
+
+#pause{
+    background-image: url(../assets/images/pause.svg);
+
+}
+
+#backward{
+    background-image: url(../assets/images/-10.svg);
+
+}
+
+#forward{
+    background-image: url(../assets/images/+10.svg);
+}
+
